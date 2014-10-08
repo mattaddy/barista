@@ -61,7 +61,7 @@ The above example will call the `increment_clicks` function from within the comp
 
 #### Event Aggregator
 
-Oftem times two components need to communicate with each other. For example, we might have a component that is responsible for handling the draggable area of a drag-and-drop, while another component handles the droppable area. To do this, we can `trigger` and `bind` to events by using the `App.vent` object.
+Often times two components need to communicate with each other. For example, we might have a component that is responsible for handling the draggable area of a drag-and-drop, while another component handles the droppable area. To do this, we can `trigger` and `bind` to events by using the `App.vent` object.
 
 ```
 App.vent.bind 'someEvent', @myHandlingFunction
