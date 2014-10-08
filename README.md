@@ -36,6 +36,12 @@ In the above example, when our `Pages#one` action renders its view to the client
 
 Any components instantiated from the `app` function of the routes object will be instantiated on *every* page.
 
+Now we can start our application.
+
+```
+App.start()
+```
+
 #### Components
 
 To define a component, we create a CoffeeScript class that extends from `Barista.Component.`
