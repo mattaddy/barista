@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barista Example</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body data-controller="<%= controller_name %>" data-action="<%= action_name %>">
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div id="header">
+        <h4>HEADER</h4>
+        <p id="clickable">Try clicking here...</p>
+      </div>
+    </div>
+  </div>
+
+  <%= yield %>
+</div>
+
+</body>
+</html>
